@@ -1,23 +1,21 @@
+
 var Singleton = (function() {
-	var constructeur = function() {
-		this.methodePublique = function() {
-		}
 
-		var methodePrivee = function() {
-		}
-
-		var prop1, prop2;
+	var compteBancaire = function(){
+		this.methodePrivee = numero();
+		this.methodePrivee = solde();
 	}
-
+	
+	
 	var instance = null;
 	return new function() {
-		this.getInstance = function() {
-			if (instance == null) {
-				instance = new constructeur();
-				instance.constructeur = null;
+			this.getInstance = function() {
+					if (instance == null) {
+							instance = new compteBancaire();
+							instance.compteBancaire = null;
+					}
+					
+					return instance;
 			}
-
-			return instance;
-		}
 	}
 })();
