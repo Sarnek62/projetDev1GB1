@@ -19,7 +19,7 @@ function next(array) {
 };  
 
 //Fonction iteration
-function iteration(array){
+function getIterator(array){
     index =0;
     checknext=true
     while(checknext ===true){
@@ -33,7 +33,7 @@ function iteration(array){
 var names = ["Robert" ,"John" ,"Julie" ,"Lora"]
 //tableau a itérer. 
 
-iteration(names);
+getIterator(names);
 //appel de la fonction iteration avec comme argument le tableau a itérer
 
 //nous avont utiliser la variable checknext pour pallier un probleme de fonctions pures et impures.
